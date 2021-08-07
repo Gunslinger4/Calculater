@@ -1,0 +1,19 @@
+num1 = eval(input("Number1: "))
+num2 = eval(input("Number2: "))
+option = input("Enter a sign: ")
+if option == '+':
+  sign = '+'
+  total = num1 + num2
+elif option == '-':
+  sign = '-'
+  total = num1 - num2
+elif option == '/':
+  sign = '/'
+  total = num1 / num2
+elif option == '*':
+  sign = '*'
+  total = num1 * num2
+else:
+  print("Invalid")
+  exit()
+print(num1, sign, num2, "=", total)
